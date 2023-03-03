@@ -6,10 +6,11 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
 }
 
 div {
-    margin: 50px;
+    margin: 5%;
 }
 
 label {
@@ -29,6 +30,7 @@ p {
     margin-right: 500px;
     margin-bottom: 0;
     border-radius: 10px;
+    text-align: center;
 }
 
 h1 {
@@ -86,4 +88,23 @@ textarea {
    
    .btn:hover::before {
     transform: translateX(0);
+   }
+
+   @media screen and (max-width: 1500px){
+    body {
+        margin: 0px;
+        margin-right: 0;
+    }
+
+    div {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    p{
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
    }
