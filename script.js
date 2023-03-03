@@ -1,6 +1,7 @@
 let correctAnswer = "red";
 
 document.getElementById("button").addEventListener("click", checkGuess);
+document.getElementById("button").addEventListener("click", eraseContents);
 
 function checkGuess() {
   let guess = document.getElementById("the_guess").value;
@@ -10,6 +11,10 @@ function checkGuess() {
     alert("Correct! Great Job!")
   } else {
     alert("Wrong-o!")
+  }
+
+  function eraseContents () {
+    document.getElementById("the_guess").value = ""
   }
 }
 
