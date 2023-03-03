@@ -5,7 +5,7 @@ document.getElementById("button").addEventListener("click", checkGuess);
 
 function checkGuess() {
   let guess = document.getElementById("the_guess").value;
-  guess = guess.toLowerCase();
+  guess = guess.toLowerCase().trim();
   console.log(guess);
   document.getElementById("the_guess").value = "";
   if (guess == correctAnswer) {
